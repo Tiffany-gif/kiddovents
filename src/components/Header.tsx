@@ -1,4 +1,6 @@
 import { CalendarDaysIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 export const Header = () => {
   return <header className="w-full bg-gradient-to-b from-[#F4A5A5] to-[#FFFFFF] py-16">
     <div className="container mx-auto px-4">
@@ -19,9 +21,9 @@ export const Header = () => {
           for unforgettable moments filled with joy, laughter, and connection.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <a href="#packages" className="bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center">
+          <Link to="/booking" className="bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center">
             Book Your Experience
-          </a>
+          </Link>
           <a href="#about" className="bg-white text-[#A855F7] font-medium py-4 px-8 rounded-full border border-[#A855F7] hover:bg-gray-50 transition-colors text-center">
             Learn More
           </a>
