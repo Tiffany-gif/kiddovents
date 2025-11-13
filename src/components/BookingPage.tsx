@@ -145,8 +145,8 @@ export const BookingPage = () => {
                                         <label
                                             key={pkg.value}
                                             className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition-all ${formData.package === pkg.value
-                                                    ? 'border-[#A855F7] bg-[#F4A5A5]/10'
-                                                    : 'border-gray-200 hover:border-[#A855F7]/50'
+                                                ? 'border-[#A855F7] bg-[#F4A5A5]/10'
+                                                : 'border-gray-200 hover:border-[#A855F7]/50'
                                                 }`}
                                         >
                                             <input
@@ -218,8 +218,8 @@ export const BookingPage = () => {
                                         <label
                                             key={addOn.id}
                                             className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${formData.addOns.includes(addOn.id)
-                                                    ? 'border-[#A855F7] bg-[#F4A5A5]/10'
-                                                    : 'border-gray-200 hover:border-[#A855F7]/50'
+                                                ? 'border-[#A855F7] bg-[#F4A5A5]/10'
+                                                : 'border-gray-200 hover:border-[#A855F7]/50'
                                                 }`}
                                         >
                                             <input

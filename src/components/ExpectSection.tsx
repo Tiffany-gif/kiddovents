@@ -15,7 +15,7 @@ export const ExpectSection = () => {
             </ul>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg w-full h-[220px] md:w-[440px] md:h-[330px] md:justify-self-end">
-            <img src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Family enjoying outdoor activities" className="w-full h-full object-cover" />
+            <img src="https://unsplash.com/photos/a-group-of-children-playing-in-a-field-DldEn-9g78k" alt="Family enjoying outdoor activities" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
