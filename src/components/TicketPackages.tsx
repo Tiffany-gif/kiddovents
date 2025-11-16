@@ -1,4 +1,5 @@
 import { HeartIcon, SparklesIcon, CrownIcon, CheckIcon, StarIcon } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 export const TicketPackages = () => {
   return <section id="packages" className="w-full py-16 bg-white">
     <div className="container mx-auto px-4">
@@ -142,6 +143,8 @@ const TicketCard = ({
   features,
   popular = false
 }: TicketCardProps) => {
+  const navigate = useNavigate();
+
   return <div className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border ${popular ? 'border-[#A855F7]' : 'border-gray-200'}`}>
     {popular && <div className="absolute right-0 top-0 bg-[#A855F7] text-white text-sm font-medium px-4 py-1 rounded-bl-lg">
       Most Popular
@@ -161,7 +164,10 @@ const TicketCard = ({
           <span className="text-sm">{feature}</span>
         </li>)}
       </ul>
-      <button className="w-full bg-[#A855F7] text-white font-medium py-3 px-4 rounded-full hover:bg-[#9333EA] transition-colors">
+      <button
+        onClick={() => navigate('/booking')}
+        className="w-full bg-[#A855F7] text-white font-medium py-3 px-4 rounded-full hover:bg-[#9333EA] transition-colors"
+      >
         Book Now
       </button>
     </div>
