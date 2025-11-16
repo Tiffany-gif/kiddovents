@@ -47,15 +47,14 @@ export const TicketPackages = () => {
         />
         <TicketCard
           icon={<CrownIcon className="w-8 h-8 text-white" />}
-          title="Family Bond Package (2 Adults + 2 Kids – 75,000 RWF)"
+          title="Family Bond Package (2 Adults + 2 Kids – 80,000 RWF)"
           description=""
-          price="75,000 RWF"
+          price="80,000 RWF"
           features={[
             'Full access for all four to Explorer & Togetherness zones',
             'Family welcome pack (snacks, Kiddovents merch, drinks)',
             'Priority 360 Booth session + Family Portrait Corner',
             'Access to Family Art Wall segment',
-            'Reserved picnic or lounge seating area',
             'Celebrate connection, laughter, and the joy of being together.',
           ]}
         />
