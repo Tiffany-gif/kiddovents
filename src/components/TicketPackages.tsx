@@ -73,57 +73,7 @@ export const TicketPackages = () => {
           ]}
         />
       </div>
-      <div className="max-w-7xl mx-auto mt-16">
-        <h3 className="text-2xl font-bold mb-4">
-          Exclusive Add-On Experiences (Not Included in Packages)
-        </h3>
-        <div className="rounded-xl bg-gradient-to-r from-[#F4A5A5] to-[#FFFFFF] p-[1px]">
-          <div className="overflow-x-auto bg-white rounded-xl">
-            <table className="min-w-full text-left">
-              <thead className="bg-gradient-to-r from-[#F4A5A5] to-[#FFFFFF]">
-                <tr>
-                  <th className="px-4 py-3 text-sm font-semibold text-gray-700">Activity</th>
-                  <th className="px-4 py-3 text-sm font-semibold text-gray-700">Description</th>
-                  <th className="px-4 py-3 text-sm font-semibold text-gray-700">Price (RWF)</th>
-                  <th className="px-4 py-3 text-sm font-semibold text-gray-700">Age</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                <tr className="even:bg-[#FDE2E2]/40">
-                  <td className="px-4 py-3">Golf Court</td>
-                  <td className="px-4 py-3">Mini family-friendly golf experience</td>
-                  <td className="px-4 py-3">5,000</td>
-                  <td className="px-4 py-3">All ages</td>
-                </tr>
-                <tr className="even:bg-[#FDE2E2]/40">
-                  <td className="px-4 py-3">Football Pitch</td>
-                  <td className="px-4 py-3">15-minute group session</td>
-                  <td className="px-4 py-3">3,000</td>
-                  <td className="px-4 py-3">All ages</td>
-                </tr>
-                <tr className="even:bg-[#FDE2E2]/40">
-                  <td className="px-4 py-3">Escape Room</td>
-                  <td className="px-4 py-3">Puzzle-based team challenge</td>
-                  <td className="px-4 py-3">7,000</td>
-                  <td className="px-4 py-3">13+</td>
-                </tr>
-                <tr className="even:bg-[#FDE2E2]/40">
-                  <td className="px-4 py-3">Canvas Kit</td>
-                  <td className="px-4 py-3">Take-home creative art kit</td>
-                  <td className="px-4 py-3">5,000</td>
-                  <td className="px-4 py-3">All ages</td>
-                </tr>
-                <tr className="even:bg-[#FDE2E2]/40">
-                  <td className="px-4 py-3">Extra 360 Booth Session</td>
-                  <td className="px-4 py-3">Capture more fun moments</td>
-                  <td className="px-4 py-3">2,000</td>
-                  <td className="px-4 py-3">All ages</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+
     </div>
   </section>;
 };

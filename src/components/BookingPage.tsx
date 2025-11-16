@@ -11,7 +11,7 @@ export const BookingPage = () => {
         package: '',
         date: '',
         numberOfGuests: '',
-        addOns: [] as string[],
+    
         specialRequests: ''
     });
 
@@ -22,29 +22,14 @@ export const BookingPage = () => {
         // You can add navigation to a confirmation page here
     };
 
-    const handleAddOnChange = (addOn: string) => {
-        setFormData(prev => ({
-            ...prev,
-            addOns: prev.addOns.includes(addOn)
-                ? prev.addOns.filter(a => a !== addOn)
-                : [...prev.addOns, addOn]
-        }));
-    };
-
     const packages = [
         { value: 'explorer', label: 'The Kiddovents Explorer Pass (Kids – 25,000 RWF)', price: '25,000 RWF' },
         { value: 'togetherness', label: 'The Togetherness Pass (Parents & Young Adults – 17,000 RWF)', price: '17,000 RWF' },
-        { value: 'family', label: 'Family Bond Package (2 Adults + 2 Kids – 75,000 RWF)', price: '75,000 RWF' },
+        { value: 'family', label: 'Family Bond Package (2 Adults + 2 Kids – 80,000 RWF)', price: '80,000 RWF' },
         { value: 'group', label: 'Group Fun Package (Group of 4 Friends – 60,000 RWF)', price: '60,000 RWF' }
     ];
 
-    const addOns = [
-        { id: 'golf', label: 'Golf Court', price: '5,000 RWF' },
-        { id: 'football', label: 'Football Pitch', price: '3,000 RWF' },
-        { id: 'escape', label: 'Escape Room', price: '7,000 RWF' },
-        { id: 'canvas', label: 'Canvas Kit', price: '5,000 RWF' },
-        { id: 'booth', label: 'Extra 360 Booth Session', price: '2,000 RWF' }
-    ];
+    
 
     return (
         <div className="w-full min-h-screen bg-white">
@@ -167,75 +152,7 @@ export const BookingPage = () => {
                                 </div>
                             </div>
 
-                            {/* Event Details */}
-                            <div className="mb-8">
-                                <h2 className="text-2xl font-bold text-[#A855F7] mb-6 flex items-center">
-                                    <CalendarDaysIcon className="w-6 h-6 mr-2" />
-                                    Event Details
-                                </h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
-                                            Preferred Date *
-                                        </label>
-                                        <input
-                                            type="date"
-                                            id="date"
-                                            required
-                                            value={formData.date}
-                                            onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#A855F7] focus:border-transparent outline-none transition-all"
-                                        />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-2">
-                                            Number of Guests *
-                                        </label>
-                                        <input
-                                            type="number"
-                                            id="guests"
-                                            required
-                                            min="1"
-                                            value={formData.numberOfGuests}
-                                            onChange={(e) => setFormData({ ...formData, numberOfGuests: e.target.value })}
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#A855F7] focus:border-transparent outline-none transition-all"
-                                            placeholder="1"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
 
-                            {/* Add-Ons */}
-                            <div className="mb-8">
-                                <h2 className="text-2xl font-bold text-[#A855F7] mb-6">
-                                    Add-On Experiences (Optional)
-                                </h2>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Enhance your experience with these additional activities
-                                </p>
-                                <div className="space-y-3">
-                                    {addOns.map((addOn) => (
-                                        <label
-                                            key={addOn.id}
-                                            className={`flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${formData.addOns.includes(addOn.id)
-                                                ? 'border-[#A855F7] bg-[#F4A5A5]/10'
-                                                : 'border-gray-200 hover:border-[#A855F7]/50'
-                                                }`}
-                                        >
-                                            <input
-                                                type="checkbox"
-                                                checked={formData.addOns.includes(addOn.id)}
-                                                onChange={() => handleAddOnChange(addOn.id)}
-                                                className="w-4 h-4 text-[#A855F7] focus:ring-[#A855F7] rounded mr-3"
-                                            />
-                                            <div className="flex-1">
-                                                <div className="font-medium text-gray-800">{addOn.label}</div>
-                                                <div className="text-sm text-[#A855F7] font-medium">{addOn.price}</div>
-                                            </div>
-                                        </label>
-                                    ))}
-                                </div>
-                            </div>
 
                             {/* Special Requests */}
                             <div className="mb-8">
