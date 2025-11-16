@@ -170,21 +170,22 @@ export const BookingPage = () => {
                             </div>
 
                             {/* Submit Button */}
-                            <div className="flex flex-col sm:flex-row gap-4">
+                           <div className="flex flex-col sm:flex-row gap-4">
+                            <a
+                                href="https://kiddovents.sinc.events/kiddovents-2208-edition-2"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1"
+                            >
                                 <button
-                                    type="submit"
-                                    className="flex-1 bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center"
+                                type="button"
+                                className="w-full bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center"
                                 >
-                                    Complete Booking
+                                Complete Booking
                                 </button>
-                                <button
-                                    type="button"
-                                    onClick={() => navigate('/')}
-                                    className="bg-white text-[#A855F7] font-medium py-4 px-8 rounded-full border border-[#A855F7] hover:bg-gray-50 transition-colors text-center"
-                                >
-                                    Cancel
-                                </button>
+                            </a>
                             </div>
+
                         </form>
                     </div>
                 </div>
