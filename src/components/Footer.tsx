@@ -1,6 +1,6 @@
 export const SpecialOffer = () => {
   return <section className="w-full py-8 bg-white">
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 width-full max-w-[1050px]">
       <div className="bg-[#FAD4D4] rounded-xl p-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-4">
         <div className="font-semibold text-lg">Special Offer:</div>
         <div>

@@ -1,5 +1,4 @@
 import { CalendarDaysIcon } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return <header className="w-full bg-gradient-to-b from-[#F4A5A5] to-[#FFFFFF] py-16">
@@ -21,9 +20,19 @@ export const Header = () => {
           for unforgettable moments filled with joy, laughter, and connection.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-          <Link to="/booking" className="bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center">
-            Book Your Experience
-          </Link>
+                <a
+                  href="https://kiddovents.sinc.events/kiddovents-2208-edition-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1"
+              >
+                  <button
+                  type="button"
+                  className="w-full bg-[#A855F7] text-white font-medium py-5 px-4 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center"
+                  >
+                  Book Your Experience
+                  </button>
+              </a>
           <a href="#about" className="bg-white text-[#A855F7] font-medium py-4 px-8 rounded-full border border-[#A855F7] hover:bg-gray-50 transition-colors text-center">
             Learn More
           </a>

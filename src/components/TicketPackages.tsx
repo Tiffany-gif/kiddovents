@@ -114,12 +114,20 @@ const TicketCard = ({
           <span className="text-sm">{feature}</span>
         </li>)}
       </ul>
-      <button
-        onClick={() => navigate('/booking')}
-        className="w-full bg-[#A855F7] text-white font-medium py-3 px-4 rounded-full hover:bg-[#9333EA] transition-colors"
-      >
-        Book Now
-      </button>
+   
+       <a
+                                href="https://kiddovents.sinc.events/kiddovents-2208-edition-2"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-1"
+                            >
+                                <button
+                                type="button"
+                                className="w-full bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center"
+                                >
+                               Book Now
+                                </button>
+                            </a>
     </div>
   </div>;
 };
