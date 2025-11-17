@@ -4,11 +4,11 @@ export const SpecialOffer = () => {
       <div className="bg-[#FAD4D4] rounded-xl p-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-4">
         <div className="font-semibold text-lg">Special Offer:</div>
         <div>
-          Book before December 15th and receive a 15% early bird discount! Use
+          Book before December 1st and receive a 15% early bird discount! Use
           code
         </div>
         <div className="bg-white px-4 py-1 rounded-md font-bold text-[#A855F7]">
-          TOGETHER2024
+          TOGETHER2025
         </div>
       </div>
     </div>
