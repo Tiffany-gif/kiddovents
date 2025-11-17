@@ -12,7 +12,7 @@ export const TicketPackages = () => {
           unforgettable memories together
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto items-stretch">
         <TicketCard
           icon={<HeartIcon className="w-8 h-8 text-white" />}
           title="The Kiddovents Explorer Pass (Kids – 25,000 RWF)"
@@ -95,11 +95,11 @@ const TicketCard = ({
 }: TicketCardProps) => {
   const navigate = useNavigate();
 
-  return <div className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border ${popular ? 'border-[#A855F7]' : 'border-gray-200'}`}>
+  return <div className={`relative bg-white rounded-2xl shadow-lg overflow-hidden border h-full flex flex-col ${popular ? 'border-[#A855F7]' : 'border-gray-200'}`}>
     {popular && <div className="absolute right-0 top-0 bg-[#A855F7] text-white text-sm font-medium px-4 py-1 rounded-bl-lg">
       Most Popular
     </div>}
-    <div className="p-8">
+    <div className="p-8 flex flex-col h-full">
       <div className="w-16 h-16 bg-[#A855F7] rounded-full flex items-center justify-center mb-6 mx-auto">
         {icon}
       </div>
@@ -108,26 +108,25 @@ const TicketCard = ({
       <div className="text-center mb-6">
         <span className="text-2xl font-bold">{price}</span>
       </div>
-      <ul className="space-y-3 mb-8">
+      <ul className="space-y-3 mb-8 flex-1">
         {features.map((feature, index) => <li key={index} className="flex items-start">
           <CheckIcon className="w-5 h-5 text-[#A855F7] mr-2 flex-shrink-0 mt-0.5" />
           <span className="text-sm">{feature}</span>
         </li>)}
       </ul>
-   
-       <a
-                                href="https://kiddovents.sinc.events/kiddovents-2208-edition-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex-1"
-                            >
-                                <button
-                                type="button"
-                                className="w-full bg-[#A855F7] text-white font-medium py-4 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors text-center"
-                                >
-                               Book Now
-                                </button>
-                            </a>
+      <a
+        href="https://kiddovents.sinc.events/kiddovents-2208-edition-2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block mt-auto"
+      >
+        <button
+          type="button"
+          className="w-full bg-[#A855F7] text-white font-medium py-3 px-8 rounded-full shadow-lg hover:bg-[#9333EA] transition-colors whitespace-nowrap"
+        >
+          Book Now
+        </button>
+      </a>
     </div>
   </div>;
 };

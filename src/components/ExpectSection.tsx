@@ -1,4 +1,6 @@
 import { CheckIcon } from 'lucide-react';
+import outdoorPhoto from '../assets/outdoor_photo.png';
+
 export const ExpectSection = () => {
   return <section className="w-full py-16 bg-white">
     <div className="container mx-auto px-4">
@@ -15,7 +17,7 @@ export const ExpectSection = () => {
             </ul>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg w-full h-[220px] md:w-[440px] md:h-[330px] md:justify-self-end">
-            <img src="./assets/outdoor_photo.png" alt="Family enjoying outdoor activities" className="w-full h-full object-cover" />
+            <img src={outdoorPhoto} alt="Family enjoying outdoor activities" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
